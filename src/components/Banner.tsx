@@ -17,7 +17,7 @@ const texts: Record<Lang, string> = {
 const subtitles: Record<Lang, string> = {
   pt: "Ajudamos imigrantes com serviços administrativos e regularização no Brasil.",
   fr: "Nous aidons les immigrés avec des services administratifs et de régularisation au Brésil.",
-  ht: "Nou ede imigran yo ak sèvis administratif ak regilarizasyon O Brezil.",
+  ht: "Nou ede imigran yo ak sèvis administratif ak regilarizasyon nan Brezil.",
   en: "We help immigrants with administrative services and regularization in Brazil.",
   es: "Ayudamos a los inmigrantes con servicios administrativos y regularización en Brasil."
 };
