@@ -29,13 +29,13 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ lang, setLang }) =>
           <FontAwesomeIcon icon={faEnvelope} /> dps.migration@gmail.com
         </span>
         <span>
-          <FontAwesomeIcon icon={faPhone} /> +55 (11) 97045-0064 — Seg à Sáb: 9h às 19h
+          <FontAwesomeIcon icon={faPhone} /> +55 (11) 95348-2936 — Seg à Sáb: 10h às 19h
         </span>
       </div>
 
       {/* RÉSEAUX SOCIAUX À DROITE */}
       <div className="bar-right">
-        <a href="https://wa.me/5511970450064" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+        <a href="https://wa.me/5511953482936" target="_blank" rel="noopener noreferrer" title="WhatsApp">
           <FontAwesomeIcon icon={faWhatsapp} />
         </a>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import logo from '../assets/logo.jpg'; // ajuste le chemin selon l’endroit où tu es
+
 
 interface NavbarProps {
   lang: "pt" | "fr" | "ht" | "en" | "es";
@@ -25,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-logo" onClick={closeMenu}>
-          <img src="../logo.jpg" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </a>
 
         <button

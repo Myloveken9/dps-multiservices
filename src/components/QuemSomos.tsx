@@ -1,4 +1,5 @@
 import quemsomosImage from '../assets/quemsomos.png';
+import quem from '../assets/quem.png'
 
 type Lang = 'pt' | 'fr' | 'ht' | 'en' | 'es';
 
@@ -8,11 +9,11 @@ interface QuemSomosProps {
 
 const QuemSomos: React.FC<QuemSomosProps> = ({ lang }) => {
   const content: Record<Lang, string> = {
-    pt: "Somos uma agência especializada no apoio integral aos imigrantes no Brasil. Oferecemos desde serviços de regularização migratória — como vistos, residência e naturalização — até soluções financeiras práticas e seguras.<br /> Realizamos depósitos bancários internacionais via MonCash e NatCash, além de envios e recebimentos de dinheiro com RIA, MoneyGram, Unitransfer, Karibe Express e Cam Transfert.<br /> Nossa equipe é composta por profissionais experientes e multilíngues, prontos para atender suas necessidades com agilidade e eficiência. Trabalhamos com ética, transparência e compromisso, sempre priorizando o bem-estar dos nossos clientes.<br /> Nossa missão é facilitar sua integração no país com confiança, agilidade e um atendimento humanizado em vários idiomas.<br /> Se você é imigrante no Brasil e precisa de apoio, entre em contato conosco. Estamos aqui para ajudar!",
-    fr: "Nous sommes une agence dédiée à l’accompagnement complet des immigrés au Brésil. Nous assistons dans les démarches de visas, de régularisation de séjour, de résidence permanente et de naturalisation. <br> Nous proposons également des dépôts bancaires internationaux via MonCash et NatCash, ainsi que des transferts d’argent via RIA, MoneyGram, Unitransfer, Karibe Express et Cam Transfert. <br> Notre mission est de vous accompagner avec professionnalisme, sécurité et en plusieurs langues.",
-    ht: "Nou se yon ajans ki bay tout sipò pou imigran. Nou ede w ak tout pwosedi legal yo tankou viza, rezidans, ak natiralizasyon. <br> Nou fè depo labank entènasyonal atravè MonCash ak NatCash, epi nou travay ak transfè lajan tankou RIA, MoneyGram, Unitransfer, Karibe Express, ak Cam Transfert. <br> Misyon nou se ede w entegre ou byen vit, an sekirite, e nan plizyè lang pou ou santi w lakay ou.",
-    en: "We are an agency specialized in providing full support for immigrants in Brazil. From visa assistance and residency applications to naturalization processes, we guide you every step of the way. <br> We also offer international bank deposit services via MonCash and NatCash, and money transfers through RIA, MoneyGram, Unitransfer, Karibe Express, and Cam Transfert.<br> Our mission is to make your integration process in Brazil smoother, safer, and supported in multiple languages.",
-    es: "Somos una agencia especializada en el apoyo integral a inmigrantes en Brasil. Ofrecemos desde servicios de regularización migratoria —como visas, residencia y naturalización— hasta soluciones financieras prácticas y seguras.<br> Realizamos depósitos bancarios internacionales vía MonCash y NatCash, además de envíos y recepciones de dinero con RIA, MoneyGram, Unitransfer, Karibe Express y Cam Transfert. <br> Nuestra misión es facilitar su integración al país con confianza, agilidad y atención humanizada en varios idiomas.",
+    pt: "Somos uma agência especializada no apoio integral aos imigrantes. Oferecemos desde serviços de regularização migratória — como : vistos, residência, naturalização, etc... Até soluções financeiras práticas e seguras. Realizamos recargas de celular para qualquer país. Além de Depósito bancarío, Servicios de Envio e Recebimento de Holdens de pagamento do ou para Exterior via RIA, MoneyGram, Unitransfer, Caribe-Express, C.A.M, MonCash, Natcash etc... Nossa missão é facilitar sua integração no país com confiança, agilidade e um atendimento humanizado em vários idiomas.",
+    fr: "Nous sommes une agence spécialisée dans le soutien complet aux immigrants. Nous proposons des services de régularisation migratoire – tels que : visas, résidence, naturalisation, etc. – ainsi que des solutions financières pratiques et sécurisées. Nous effectuons des recharges de téléphone pour tous les pays. En plus de dépôts bancaires, nous offrons des services d’envoi et de réception de Holdens depuis ou vers l’étranger via RIA, MoneyGram, Unitransfer, Caribe-Express, C.A.M, MonCash, Natcash, etc. Notre mission est de faciliter votre intégration dans le pays avec confiance, rapidité et un accueil humain dans plusieurs langues.",
+    ht: "Nou se yon ajans ki espesyalize nan sipò total pou imigran yo. Nou ofri sèvis pou regilarizasyon imigrasyon – tankou : viza, rezidans, natiralizasyon, elatriye – ansanm ak solisyon finansye ki pratik ak sekirize. Nou fè rechaj telefòn pou tout peyi. Anplis depo bankè, nou bay sèvis voye ak resevwa lajan (Holdens) soti oswa ale aletranje atravè RIA, MoneyGram, Unitransfer, Caribe-Express, C.A.M, MonCash, Natcash, elatriye. Misyon nou se fasilite entegrasyon ou nan peyi a ak konfyans, efikasite, epi yon sèvis imanitè nan plizyè lang.",
+    en: "We are an agency specialized in comprehensive support for immigrants. We offer services for migration regularization – such as visas, residence, naturalization, etc. – and practical, secure financial solutions. We provide mobile recharges for any country. In addition to bank deposits, we offer money sending and receiving services from or to abroad via RIA, MoneyGram, Unitransfer, Caribe-Express, C.A.M, MonCash, Natcash, etc. Our mission is to make your integration in the country easier with trust, speed, and humanized service in multiple languages.",
+    es: "Somos una agencia especializada en el apoyo integral a inmigrantes. Ofrecemos servicios de regularización migratoria – como visas, residencia, naturalización, etc. – y soluciones financieras prácticas y seguras. Realizamos recargas de celulares para cualquier país. Además de depósitos bancarios, ofrecemos servicios de envío y recepción de giros desde o hacia el exterior vía RIA, MoneyGram, Unitransfer, Caribe-Express, C.A.M, MonCash, Natcash, etc. Nuestra misión es facilitar su integración en el país con confianza, agilidad y un servicio humano en varios idiomas.",
   };
 
 const titles: Record<Lang, string> = {
@@ -38,10 +39,10 @@ const titles: Record<Lang, string> = {
               es: "Ayuda profesional para tu proceso migratorio"
             }[lang]}
           </div>
-          <img src="./src/assets/migration-help.jpg" alt="Ajuda profissional" />
+          <img src={quem} alt="Ajuda profissional" />
           <div className="whatsapp-button">
             <a
-              href="https://wa.me/5511970450064"
+              href="https://wa.me/5511953482936"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -60,11 +61,11 @@ const titles: Record<Lang, string> = {
           <div className="etapa">
             <span>01</span>
             {{
-              pt: "Avaliação Gratuita",
-              fr: "Évaluation gratuite",
-              en: "Free evaluation",
-              ht: "Evalyasyon gratis",
-              es: "Evaluación gratuita"
+              pt: "Avaliação",
+              fr: "Évaluation",
+              en: "Evaluation",
+              ht: "Evalyasyon",
+              es: "Evaluación"
             }[lang]}
           </div>
           <div className="etapa">
@@ -80,21 +81,21 @@ const titles: Record<Lang, string> = {
           <div className="etapa">
             <span>03</span>
             {{
-              pt: "Assessoria Jurídica",
-              fr: "Assistance juridique",
-              en: "Legal support",
-              ht: "Asistans legal",
-              es: "Asesoría jurídica"
+              pt: "Administração",
+              fr: "Administration",
+              en: "Administration",
+              ht: "Administrasyon",
+              es: "Administración"
             }[lang]}
           </div>
           <div className="etapa">
             <span>04</span>
             {{
-              pt: "Acompanhamento completo",
-              fr: "Accompagnement complet",
-              en: "Full support",
-              ht: "Swivi konplè",
-              es: "Acompañamiento total"
+              pt: "Acompanhamento ",
+              fr: "Accompagnement ",
+              en: "Support",
+              ht: "Swivi ",
+              es: "Acompañamiento"
             }[lang]}
           </div>
         </div>
@@ -138,7 +139,7 @@ const titles: Record<Lang, string> = {
 
         <a
           className="whatsapp-banner-button"
-          href="https://wa.me/5511970450064"
+          href="https://wa.me/5511953482936"
           target="_blank"
           rel="noopener noreferrer"
         >

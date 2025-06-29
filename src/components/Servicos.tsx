@@ -11,78 +11,101 @@ function Servicos({ lang }: ServicosProps) {
     ht: "Sèvis Nou Yo",
     en: "Our Services",
     es: "Nuestros Servicios"
+
   };
+
+  <h2>
+    {{
+      pt: "Conheça as soluções que oferecemos para facilitar sua vida no Brasil.",
+      fr: "Découvrez les solutions que nous offrons pour faciliter votre vie au Brésil.",
+      en: "Discover the solutions we offer to make your life easier in Brazil.",
+      ht: "Dekouvri solisyon nou ofri yo pou fasilite lavi ou nan Brezil.",
+      es: "Descubra las soluciones que ofrecemos para facilitar su vida en Brasil."
+    }[lang]}
+  </h2>
 
   const services: Record<Lang, { title: string; desc: string }[]> = {
     pt: [
-      { title: "Agendamento PF", desc: "Atendimento e regularização migratória junto à Polícia Federal." },
-      { title: "Naturalização", desc: "Processo para obtenção da cidadania brasileira." },
+      { title: "Transferência de Dinheiro e Depósito bancario", desc: "Abertura de conta, depósitos bancários e transferências internacionais com Ria, MoneyGram, Unitransfer, etc..." },
+      { title: "Recarga de Celular", desc: "Recarga internacional com digicel, natcom, movitel, claro, orange, altice etc." },
+      { title: "Agendamento para Polícia Féderal", desc: "Atendimento e regularização migratória junto à Polícia Federal." },
+      { title: "Agendamento para Passaporte", desc: "Agendamento para 1° e 2° via do Passaporte." },
+      { title: "Solicitação de Refúgio e Renovação de Protocolo", desc: "Acompanhamento completo na sua solicitação de refúgio." },
+      { title: "Naturalização", desc: "Naturalização em qualquer estado do Brasil até a obtenção do Passaporte." },
+      { title: "Autorização de Residência", desc: "Em base de reunião familiar, para os cidadãos da CPLP etc... Apoio completo e profissionalizado" },
+      { title: "Carta Convite / Declaração de depêndencia financeira ", desc: "Carta convite com declaração de apoio financeiro para o seu processo." },
+      { title: "Declaração de residência e documentos diversos", desc: "Emissão de declarações e documentos exigidos por órgãos públicos ou privados, Criação de CNPJ etc..." },
+      { title: "Abertura de Carteira de Trabalho Digital", desc: "Assistência para criar e ativar sua carteira de trabalho digital." },
       { title: "Traduções juramentadas", desc: "Documentos oficiais traduzidos por tradutores certificados." },
-      { title: "Transferência de dinheiro", desc: "Com Ria, MoneyGram, Unitransfer, Caribe Express, Remesa." },
-      { title: "Recarga de celular", desc: "Recarregue com Moncash, Natcash e outras operadoras." },
-      { title: "Conta bancária", desc: "Abertura de conta e depósitos em bancos internacionais." },
-      { title: "Apostilamento e consularização", desc: "Legalização de documentos para uso internacional." },
-      { title: "Consultoria Migratória", desc: "Elaboração de estratégias e apoio para residência em Portugal." },
-      { title: "Contratos de serviços", desc: "Água, luz, gás, internet e mais." },
-      { title: "Consultoria Fiscal", desc: "Representação fiscal e obtenção de NIF." },
-      { title: "Reagrupamento familiar", desc: "Apoio completo para reunir sua família legalmente." },
-      { title: "Inscrição escolar/universitária", desc: "Suporte completo para matrícula em escolas e universidades." }
+      { title: "Agência e Segurança de Viagens", desc: "Agência especializada em viagens e segurança para todas as suas deslocações." },
+      { title: "Consultoria em vistos e documentação", desc: "Orientação especializada para obtenção de visto e os documentos."}
+
     ],
     fr: [
-      { title: "Rendez-vous PF", desc: "Prise de rendez-vous et régularisation auprès de la Police Fédérale." },
-      { title: "Naturalisation", desc: "Accompagnement pour obtenir la nationalité brésilienne." },
-      { title: "Traductions assermentées", desc: "Traduction officielle pour documents internationaux." },
-      { title: "Transfert d'argent", desc: "Unitransfer, Ria, MoneyGram, Caribe Express, Remesa." },
-      { title: "Recharges téléphone", desc: "Moncash, Natcash et autres services de recharge mobile." },
-      { title: "Ouverture de compte", desc: "Comptes bancaires internationaux avec assistance." },
-      { title: "Légalisation de documents", desc: "Apostilles, certification, consularisation." },
-      { title: "Consultation migratoire", desc: "Aide pour résidence au Portugal et dans l’UE." },
-      { title: "Contrats (électricité, eau…)", desc: "Installation et gestion des services essentiels." },
-      { title: "Consultation fiscale", desc: "Obtenir NIF, statut de résident fiscal, etc." },
-      { title: "Regroupement familial", desc: "Démarches pour faire venir la famille légalement." },
-      { title: "Inscription scolaire", desc: "Soutien pour écoles, universités, équivalences." }
+      { title: "Transfert d'argent et Depôt bancaire", desc: "Ouverture de compte, dépôts bancaires et transferts internationaux via Ria, MoneyGram, Unitransfer, etc..." },
+      { title: "Recharge de Téléphone", desc: "Recharge internationale avec digicel, natcom, movitel, claro, orange, altice etc..."},
+      { title: "Rendez-vous à la Police Fédérale", desc: "Assistance et régularisation migratoire auprès de la Police Fédérale." },
+      { title: "Rendez-vous Passport", desc: "Rendez-vous Passport 1° et 2° copie" },
+      { title: "Demande d’asile et Renouvellement de Protocole ", desc: "Accompagnement complet dans votre demande d’asile." },
+      { title: "Naturalisation", desc: "Processus d'obtention de la citoyenneté brésilienne, jusqu'a l'obtention du Passport." },
+      { title: "Autorisation de Residence", desc: " Conformément à la réunification familiale, l’obtention d’un titre de séjour pour les ressortissants de la CPLP etc... Support complet et professionnelle" },
+      { title: "Carte d'invitation / Déclaration de dependance finacière ", desc: "Lettre d’invitation avec déclaration de soutien financier pour vos démarches." },
+      { title: "Déclaration de Résidence et autres Documents", desc: "Émission de déclarations et documents requis par des organismes publics ou privés, Création de CNPJ etc.." },
+      { title: "Ouverture de Carte de Travail numérique", desc: "Assistance pour créer et activer votre portefeuille de travail." },
+      { title: "Traductions assermentées", desc: "Documents officiels traduits par des traducteurs certifiés." },
+      { title: "Agence de voyage et securité", desc: "Agence spécialisée en voyages et sécurité pour tous vos déplacements." },
+      { title: "Conseil en visas et documentation", desc: "Conseils spécialisés pour l’obtention de visa et les documents."} 
+    
     ],
-    ht: [
-      { title: "Randevou Lapolis", desc: "Randevou pou w regilarize sitiyasyon w." },
-      { title: "Natiralizasyon", desc: "Ede w jwenn nasyonalite brezilyen oswa Ewopeyen." },
-      { title: "Tradiksyon ofisyèl", desc: "Tradiksyon sètifye pou dokiman legal." },
-      { title: "Transfè lajan", desc: "Via Ria, Unitransfer, MoneyGram, Remesa, Caribe Express." },
-      { title: "Rechaj telefòn", desc: "Moncash, Natcash, ak lòt sèvis entènernasyonal." },
-      { title: "Konto labank", desc: "Louvri kont labank epi fè depo entènasyonal." },
-      { title: "Legalizasyon dokiman", desc: "Apostiy, konsilarizasyon, sètifikasyon." },
-      { title: "Konsiltasyon migratwa", desc: "Ede w jwenn rezidans nan Pòtigal ak lòt peyi." },
-      { title: "Sèvis debaz", desc: "Kontra dlo, limyè, gaz, entènèt." },
-      { title: "Konsiltasyon fiskal", desc: "Jwenn NIF, reprezantan fiskal, elatriye." },
-      { title: "Rasanbleman fanmi", desc: "Mete tout fanmi w ansanm legalman." },
-      { title: "Enskripsyon lekòl", desc: "Ede w rantre lekòl oswa inivèsite." }
+    
+      ht: [
+      { title: "Transfè lajan ak Depo bankè Entènasyonal", desc: "Ouvèti kont, depo bankè ak transfè entènasyonal atravè Ria, MoneyGram, Unitransfer, etc... " },
+      { title: "Rechaj Telefón", desc: "Rechaj mobil entènasyonal ak digicel, natcom, movitel, claro, orange, altice etc..." },
+      { title: "Randevou Polis Federal", desc: "Sipò ak randevou migratwa pou Polis Federal." },
+      { title: "Randevou Paspò", desc: "Randevou pou Paspò" },
+      { title: "Demann azil ak Renouvèlman Pwotokòl", desc: "Nou akonpaye w nan tout pwosesis demann azil." },
+      { title: "Natiralizasyon", desc: "Pwosesis pou jwenn sitwayènte brezilyen, akonpayman jiskake ou gen Paspò a." },
+      { title: "Otorizasyon Rezidans", desc: " Konfòmeman ak reyinyon fanmilyal, otorizasyon rezidans pou sitwayen CPLP yo elatriye..., Sipò konplè e pwofesyonèl" },
+      { title: "Lèt envitasyon / Deklarasyon depandans finansyè", desc: "Lèt envitasyon, deklarasyon sipò finansye pou w ranpli dosye w elatriye..." },
+      { title: "Deklarasyon Rezidans ak lòt Dokiman", desc: "Delivrans deklarasyon ak dokiman otorite piblik oswa prive mande, kreyasyon CNPJ elatriye..." },
+      { title: "Ouvèti Kanè Travay dijital", desc: "Nou ede w kreye ak aktive kanè travay dijital." },
+      { title: "Tradiksyon Sèmante", desc: "Dokiman ofisyèl tradui pa tradiktè sètifye." },
+      { title: "Ajans de vwayaj e sekirite", desc: "Ajans espesyalize nan vwayaj ak sekirite pou tout deplasman ou yo." },
+      { title: "Konsiltasyon sou viza ak dokiman", desc: "Gid espesyalize pou jwenn viza ak dokiman."}
+
     ],
     en: [
-      { title: "Federal Police Appointments", desc: "Booking and status regularization in Brazil." },
-      { title: "Naturalization", desc: "Support to apply for Brazilian or EU citizenship." },
-      { title: "Certified Translations", desc: "Legal document translation by sworn translators." },
-      { title: "Money Transfers", desc: "With Ria, MoneyGram, Unitransfer, Remesa, Caribe Express." },
-      { title: "Mobile Top-ups", desc: "Moncash, Natcash and other top-up services." },
-      { title: "Bank Account", desc: "Open international bank accounts and make deposits." },
-      { title: "Document Legalization", desc: "Apostille, consularization, certification." },
-      { title: "Migration Consulting", desc: "Strategies to obtain Portuguese residence." },
-      { title: "Utility Contracts", desc: "Water, electricity, internet and more." },
-      { title: "Tax Consulting", desc: "Get your NIF and fiscal representation." },
-      { title: "Family Reunification", desc: "Assistance to legally reunite families." },
-      { title: "School Enrollment", desc: "Help with school or university admissions." }
+      { title: "Money Transfer and Internacional Deposit", desc: "Account opening, bank deposits, and international money transfers with Ria, MoneyGram, Unitransfer, etc..." },
+      { title: "Mobile Recharge", desc: "International Top-Up with digicel, natcom, movitel, claro, orange, altice etc..."},
+      { title: "Federal Police Appointment", desc: "Assistance and immigration regularization with the Federal Police." },
+      { title: "Passaport apointment", desc: "Passport apointment 1° and 2° copy." },
+      { title: "Refugee application Protocol renewal", desc: "Full support with your refugee application." },
+      { title: "Naturalisation", desc: "Process to obtain Brazilian citizenship." },
+      { title: "Resident Permit", desc: "Comprehensive support for family reunification, residence authorization for CPLP nationals etc.." },
+      { title: "Invitation Letter /Financial dependency declaration", desc: "Invitation letter, financial support statement for your application etc..." },
+      { title: "Proof of Residence and Various documents", desc: "Issuance of declarations and documents required by public or private entities, Create CNPJ etc..." },
+      { title: "Digital Work Card setup", desc: "Support to create and activate your digital wallet." },
+      { title: "Certified Translations", desc: "Official documents translated by certified translators." },
+      { title: "Travel agency e security", desc: "Agency specialized in travel and security for all your trips." },
+      { title: "Visa and documentation consultancy", desc: "Specialized guidance for obtaining visa and documents."}
+
     ],
+
     es: [
-      { title: "Cita Policía Federal", desc: "Agendamiento y regularización migratoria." },
-      { title: "Naturalización", desc: "Apoyo para obtener la ciudadanía brasileña o europea." },
-      { title: "Traducciones certificadas", desc: "Traducciones oficiales para documentos legales." },
-      { title: "Transferencias de dinero", desc: "Ria, MoneyGram, Caribe Express, Remesa, Unitransfer." },
-      { title: "Recargas de celular", desc: "Servicios de recarga como Moncash y Natcash." },
-      { title: "Cuenta bancaria", desc: "Apertura y depósito en cuentas internacionales." },
-      { title: "Legalización de documentos", desc: "Apostilla, certificación y consularización." },
-      { title: "Asesoría migratoria", desc: "Residencia en Portugal y procesos migratorios." },
-      { title: "Contratos de servicios", desc: "Agua, luz, gas, internet y más." },
-      { title: "Consultoría fiscal", desc: "Representación y obtención de NIF." },
-      { title: "Reagrupación familiar", desc: "Reunificación familiar legal y segura." },
-      { title: "Inscripción escolar", desc: "Matrícula en escuelas y universidades." }
+      { title: "Transferencia de dinero e Deposito en la cuenta bancaria", desc: "Abertura de cuenta, depósitos bancarios y transferencias internacionales a través de Ria, MoneyGram, Unitransfer, etc..." },
+      { title: "Recarga de celular", desc: "Recargue digicel, natcom, movitel, claro, orange, altice etc..." },
+      { title: "Cita con la Policía Federal", desc: "Asistencia y regularización migratoria con la Policía Federal." },
+      { title: "Cita para Passaporte", desc: "Cita para Passaporte." },
+      { title: "Solicitud de asilo e Renovación de protocolo", desc: "Acompañamiento integral en su solicitud de asilo" },
+      { title: "Naturalizacíon", desc: "Proceso para obtener la ciudadanía brasileña" },
+      { title: "Autorizacíon del Residencía", desc: "En base del la reunificación familiar, la autorización de residencia para ciudadanos de la CPLP etc.. Apoyo completo e profissionalizado" },
+      { title: "Carta de invitación / Declaración de dependencia financiera", desc: "Carta de invitación, declaración de apoyo financiero para su trámite etc." },
+      { title: "Declaración de Residencia y Documentos diversos", desc: "Emisión de declaraciones y documentos exigidos por entidades públicas o privadas, Criação de CNPJ." },
+      { title: "Abertura de Carta de trabajo digital", desc: "Asistencia para crear y activar su billetera de trabajo digital." },
+      { title: "Traduções juramentadas", desc: "Documentos oficiales traducidos por traductores certificados." },
+      { title: "Agência e Segurança de Viagens", desc: "Agencia especializada en viajes y seguridad para todos sus desplazamientos." },
+      { title: "Consultoría en visas y documentación", desc: "Orientación especializada para la obtención de visto y documentos."}
+
     ]
   };
 
