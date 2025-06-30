@@ -44,46 +44,6 @@
   box-shadow: 0 4px 10px rgba(6, 187, 36, 0.06);
 
 }
-
-
-/* === DEPOIMENTOS === */
-.depoimentos {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.depoimentos h2 {
-  font-size: 2rem;
-  color: #24445C;
-  margin-bottom: 2rem;
-}
-
-.depoimentos-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.depoimento-card {
-  background-color: #f7faff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-style: italic;
-  color: #333;
-}
-
-.depoimento-card strong {
-  display: block;
-  margin-top: 1rem;
-  color: #24445C;
-  font-style: normal;
-}
-
-
 /* === CONTATO === */
 .contato {
   padding: 60px 20px;
@@ -187,47 +147,6 @@
   transform: scale(1.03);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
-
-
-
-/* === DEPOIMENTOS === */
-.depoimentos {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.depoimentos h2 {
-  font-size: 2rem;
-  color: #24445C;
-  margin-bottom: 2rem;
-}
-
-.depoimentos-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.depoimento-card {
-  background-color: #f7faff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-style: italic;
-  color: #333;
-}
-
-.depoimento-card strong {
-  display: block;
-  margin-top: 1rem;
-  color: #24445C;
-  font-style: normal;
-}
-
-
 /* === CONTATO === */
 .contato {
   padding: 60px 20px;
@@ -343,94 +262,6 @@
   height: auto;
   border-radius: 12px;
 }
-
-
-/* === DEPOIMENTOS === */
-.depoimentos {
-  padding: 40px 20px;
-  background-color: #edfbea;
-  text-align: center;
-}
-
-.depoimentos h2 {
-  font-size: 2rem;
-  color: #24445C;
-  margin-bottom: 2rem;
-}
-
-/* Layout général avec photo */
-.depoimentos-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-/* Cartes alignées comme les services */
-.depoimentos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  flex: 1 1 600px;
-}
-
-/* Carte style similaire aux services */
-.depoimento-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(56, 185, 4, 0.2);
-  max-width: 320px;
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.depoimento-card:hover {
-  transform: translateY(-4px);
-}
-
-.depoimento-card p {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.depoimento-card strong {
-  color: #245c29;
-  font-size: 0.9rem;
-  display: block;
-  text-align: right;
-}
-
-/* Image à droite */
-.depoimentos-photo {
-  flex: 0 0 300px;
-  max-width: 300px;
-}
-
-.depoimentos-photo img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  object-fit: contain;
-;
-}
-
-/* Responsive pour tablette et mobile */
-@media (max-width: 960px) {
-  .depoimentos-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .depoimentos-photo {
-    max-width: 90%;
-    margin-top: 20px;
-  }
-}
-
 .galeria {
   padding: 60px 20px;
   background-color: #f4fff4;
@@ -777,4 +608,8 @@
     height: 26px;
     font-size: 1rem;
   }
+}
+
+html, body {
+  overflow-x: hidden;
 }
