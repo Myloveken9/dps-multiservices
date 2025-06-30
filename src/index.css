@@ -458,24 +458,24 @@ footer {
 
 
 /* ===== BANNER ===== */
-/* Mobiles - Stack vertically */
-@media (max-width: 480px) {
-  .quem-somos-etapas {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden; /* supprime la barre de scroll horizontale */
-    scroll-snap-type: none;
-    padding: 10px;
-    gap: 16px;
-  }
-
-  .etapa {
-    width: 100%;       /* pleine largeur */
-    min-width: auto;   /* ne force plus la largeur */
-    max-width: 100%;
-  }
+.banner {
+  position: relative;
+  padding: 40px 20px 60px; /* assez d'espace en bas pour les icon-box */
+  background-color: #f0f4f8; /* exemple, adapte à ton design */
+  overflow: visible; /* permet aux enfants de ne pas être cachés */
+  text-align: center;
 }
 
+/* Conteneur des icon-box */
+.icon-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+}
+
+/* Box individuelle */
 .icon-box {
   display: flex;
   flex-direction: column;
@@ -507,6 +507,23 @@ footer {
   line-height: 1.4;
   font-weight: 500;
 }
+
+/* === MOBILE === */
+@media (max-width: 480px) {
+  .icon-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .icon-box {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
 
 
 .quem-somos-banner-image {
@@ -1492,3 +1509,4 @@ img {
   flex: 1 1 250px;
   min-width: 200px;
 }
+

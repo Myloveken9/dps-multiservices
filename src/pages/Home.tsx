@@ -8,7 +8,6 @@ import icon4 from '../assets/icon4.png';
 import banner from '../assets/banner.jpg';
 import argent1 from '../assets/argent1.png'; // adapte le chemin si nécessaire
 import argent2 from '../assets/argent2.png';
-import argent3 from '../assets/argent3.png';
 import icons from '../assets/icons.jpg';
 import quem from '../assets/quem.png';
 import migration from '../assets/migration.jpg'; // Remplacez par le bon nom et extension de fichier
@@ -178,25 +177,6 @@ return (
                 en: "Full assistance with migration processes: visas, regularization, naturalization, and official documents.",
                 ht: "Asistans konplè pou pwosesis migratwa: viza, regilarizasyon, natiralizasyon ak dokiman ofisyèl.",
                 es: "Asistencia completa en trámites migratorios: visas, regularización, naturalización y documentos oficiales."
-              }[lang]}</p>
-            </div>
-
-            {/* Bloc 3 */}
-            <div className="icon-box">
-              <img src={argent3} alt="Multilingue" />
-              <p>{{
-                pt: "Atendimento multilingue",
-                fr: "Assistance multilingue",
-                en: "Multilingual support",
-                ht: "Sèvis plizyè lang",
-                es: "Atención multilingüe"
-              }[lang]}</p>
-              <p>{{
-                pt: "Atendimento em francês, português, inglês, espanhol e crioulo haitiano.",
-                fr: "Service multilingue disponible en français, portugais, anglais, espagnol et créole haïtien.",
-                en: "Service available in French, Portuguese, English, Spanish, and Haitian Creole.",
-                ht: "Sèvis disponib an franse, pòtigè, anglè, panyòl ak kreyòl ayisyen.",
-                es: "Atención en francés, portugués, inglés, español y criollo haitiano."
               }[lang]}</p>
             </div>
           </div>
