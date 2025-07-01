@@ -6,6 +6,7 @@ interface NavbarProps {
   lang: "pt" | "fr" | "ht" | "en" | "es";
 }
 
+
 const Navbar: React.FC<NavbarProps> = ({ lang }) => {
   const [isOpen, setIsOpen] = useState(false);
 

@@ -4,7 +4,7 @@ interface ContatoProps {
   lang: Lang;
 }
 
-function Contato({ lang }: ContatoProps) {
+const Contato: React.FC<ContatoProps> = ({ lang }) => {
   const texts = {
     pt: {
       title: "Contato",
@@ -28,7 +28,7 @@ function Contato({ lang }: ContatoProps) {
     },
     es: {
       title: "Contacto",
-      desc: "Contáctenos para hacer preguntas o solicitar un presupuesto.",
+      desc: "Contáctenos para hacer preguntas ou solicitar un presupuesto.",
       btn: "Formulario de contacto"
     }
   };

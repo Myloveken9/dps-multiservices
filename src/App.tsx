@@ -15,9 +15,8 @@ function App() {
     <div className="app">
       <LanguageSwitcher lang={lang} setLang={setLang} />
       <Navbar lang={lang} />
-      <Home lang={lang}/>
-
-      </div>
+      <Home lang={lang} />
+    </div>
   );
 }
 
