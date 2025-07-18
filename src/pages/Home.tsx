@@ -686,7 +686,7 @@ return (
         <img src={icons} alt="Icons" />
       </div>
       <p>{{
-        pt: "Parceria com faculdade para curso de proficiencia na lingua portuguesa para natuiralização.",
+        pt: "Parceria com faculdade para curso de proficiencia na lingua portuguesa para naturalização.",
         fr: "Partenariat avec une université pour un cours de langue portugaise pour la naturalisation.",
         en: "Partnership with university for Portuguese proficiency course for naturalization.",
         ht: "Patenarya ak inivèsite pou kou konpetans nan lang Pòtigè pou natiralizasyon.",

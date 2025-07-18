@@ -40,7 +40,7 @@ function Servicos({ lang }: ServicosProps) {
       { title: "Declaração de residência e documentos diversos", desc: "Criação de CNPJ, Contrato de aluguel, Extraits d'Archives, Cassier judiciaire, Declaração concubinagem etc..." },
       { title: "Abertura de Carteira de Trabalho Digital", desc: "Assistência para criar e ativar sua carteira de trabalho digital." },
       { title: "Traduções juramentadas", desc: "Documentos oficiais traduzidos por tradutores certificados." },
-      {title: "Parceria com Faculdade", desc: "Parceria com faculdade para curso de proficiencia na lingua portuguesa para natuiralização"},
+      {title: "Parceria com Faculdade", desc: "Parceria com faculdade para curso de proficiencia na lingua portuguesa para naturalização"},
       { title: "Agência e Segurança de Viagens", desc: "Agência especializada em viagens e segurança para todas as suas deslocações." },
       { title: "Consultoria em vistos e documentação", desc: "Orientação especializada para obtenção de visto e os documentos."}
 
