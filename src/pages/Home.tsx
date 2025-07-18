@@ -366,21 +366,63 @@ return (
     <div className="card">
       
       <h3>{{
-        pt: "Transferência de dinheiro e Depósito bancario",
-          fr: "Transfert d'argent et Depôt bancaire ",
-        en: "Money Transfer and Internacional Deposit",
-        ht: "Transfè lajan ak Depo bankè entènasyonal",
-        es: "Transferencia de dinero e Deposito en la cuenta bancaria"
+        pt: "Transferência de dinheiro",
+          fr: "Transfert d'argent",
+        en: "Money Transfer",
+        ht: "Transfè lajan",
+        es: "Transferencia de dinero"
       }[lang]}</h3>
       <div className= "icone serviço">
         <img src={icons} alt="Icons" />
       </div>
       <p>{{
-        pt: "Abertura de conta, depósitos bancários e transferências internacionais com Ria, MoneyGram, Unitransfer, etc...",
-        fr: "Ouverture de compte, dépôts bancaires et transferts internationaux via Ria, MoneyGram, Unitransfer, etc...",
-        en: "Account opening, bank deposits, and international money transfers with Ria, MoneyGram, Unitransfer, etc...",
-        ht: "Ouvèti kont, depo bankè ak transfè entènasyonal atravè Ria, MoneyGram, Unitransfer, etc... ",
-        es: "Abertura de cuenta, depósitos bancarios y transferencias internacionales a través de Ria, MoneyGram, Unitransfer, etc..."
+        pt: "Transferências internacionais com Ria, C.A.M, MoneyGram, Unitransfer, etc...",
+        fr: "Transferts internationaux via Ria, C.A.M, MoneyGram, Unitransfer, etc...",
+        en: "Account opening, bank deposits, international money transfers with Ria, C.A.M, MoneyGram, Unitransfer, etc...",
+        ht: "Transfè entènasyonal atravè Ria, C.A.M, MoneyGram, Unitransfer, etc... ",
+        es: "Transferencias internacionales a través de Ria, C.A.M, MoneyGram, Unitransfer, etc..."
+      }[lang]}</p>
+    </div>
+
+    {/*Depósitos Bancarios*/}
+    <div className="card">
+      <h3>{{
+        pt: "Depósitos Bancários",
+        fr: "Dépôts bancaires",
+        en: "Bank Deposits",
+        ht: "Depo bankè",
+        es: "Depósitos Bancarios"
+      }[lang]}</h3>
+      <div className= "icone serviço">
+        <img src={icons} alt="Icons" />
+      </div>
+      <p>{{
+        pt: "Depósitos bancários e Abertura de conta em diversas instituições financeiras Nacional e Internacional.",
+        fr: "Dépôts bancaires et ouverture de compte dans diverses institutions financières nationales et internationales.",
+        en: "Bank deposits and account opening in various national and international financial institutions.",
+        ht: "Depo bankè ak ouvèti kont nan divès enstitisyon finansye nasyonal ak entènasyonal.",
+        es: "Depósitos bancarios y apertura de cuenta en diversas instituciones financieras nacionales e internacionales."
+      }[lang]}</p>
+    </div>
+
+    {/* Compra e Venda de Moedas Estrangeiras */}
+    <div className="card">
+      <h3>{{
+      pt: "Compra e Venda de Moedas Estrangeiras",
+      fr: "Achat et vente de devises étrangères",
+      en: "Foreign Currency Exchange",
+      ht: "Achte ak vann lajan etranje",
+      es: "Compra y venta de divisas extranjeras"
+      }[lang]}</h3>
+      <div className= "icone serviço">
+        <img src={icons} alt="Icons" />
+        </div>
+      <p>{{
+        pt: "Compra e venda de moedas estrangeiras com taxas competitivas.",
+        fr: "Achat et vente de devises étrangères à des taux compétitifs.",
+        en: "Buying and selling foreign currencies at competitive rates.",
+        ht: "Achte ak vann lajan etranje ak to konpetitif.",
+        es: "Compra y venta de divisas extranjeras a tasas competitivas."
       }[lang]}</p>
     </div>
 
@@ -429,12 +471,32 @@ return (
       }[lang]}</p>
     </div>
 
+    {/* CPF */}
+    <div className="card">
+      <h3>{{
+        pt: "CPF",
+        fr: "CPF",
+        en: "CPF",
+        ht: "CPF",
+        es: "CPF"
+      }[lang]}</h3>
+      <div className= "icone serviço">
+        <img src={icons} alt="Icons" />
+      </div>
+      <p>{{
+        pt: "Facilitamos o processo de obtenção do 1° e 2 via CPF.",
+        fr: "Nous facilitons le processus d’obtention du 1° e 2 via CPF.",
+        en: "We facilitate the CPF registration process.",
+        ht: "Nou fasilite pwosesis pou jwenn 1° e 2 via CPF",
+        es: "Facilitamos el proceso de obtención del CPF."
+      }[lang]}</p>
+    </div>
+
      {/* Agendamento de Passaporte*/}
     <div className="card">
-      
       <h3>{{
         pt: "Agendamento para Passaporte",
-        fr: "Rendez-vous Passport",
+        fr: "Rendez-vous Passeport",
         en: "Passaport apointment",
         ht: "Randevou Paspò",
         es: "Cita para Passaporte"
@@ -523,7 +585,7 @@ return (
       
       <h3>{{
         pt: "Carta Convite / Declaração de depêndencia financeira ",
-        fr: "Carte d'invitation / Déclaration de dependance finacière ",
+        fr: "Carte d'invitation / Déclaration de dépendance financière ",
         en: "Invitation Letter /Financial dependency declaration",
         ht: "Lèt envitasyon / Deklarasyon depandans finansyè",
         es: "Carta de invitación / Declaración de dependencia financiera"
@@ -556,11 +618,11 @@ return (
   </div>
 
   <p>{{
-    pt: "Emissão de declarações e documentos exigidos por órgãos públicos ou privados, Criação de CNPJ etc...",
-    fr: "Émission de déclarations et documents requis par des organismes publics ou privés, Création de CNPJ etc..",
-    en: "Issuance of declarations and documents required by public or private entities, Create CNPJ etc...",
-    ht: "Delivrans deklarasyon ak dokiman otorite piblik oswa prive mande, kreyasyon CNPJ elatriye...",
-    es: "Emisión de declaraciones y documentos exigidos por entidades públicas o privadas, Criação de CNPJ etc.."
+    pt: "Criação de CNPJ, Contrato de aluguel, Extraits d'Archives, Cassier judiciaire, Declaração concubinagem etc...",
+    fr: "Création de CNPJ,  Contrat de résidence, Extraits d'archives, Casier judiciaire, Déclaration de concubinage, etc..",
+    en: "Create CNPJ, Residency contract, Archive extracts, Criminal record, Declaration of cohabitation, etc...",
+    ht: "Kreyasyon CNPJ, Kontra lwaye, Ekstrè Achiv, Kazye Jidisyè Deklaration konkibinaj, elatriye...",
+    es: "Criação de CNPJ, Contrato de residencia, Extractos de archivos, Antecedentes penales, Declaración de convivencia, etc.."
   }[lang]}</p>
 </div>
 
@@ -609,6 +671,29 @@ return (
         es: "Documentos oficiales traducidos por traductores certificados."
       }[lang]}</p>
     </div>
+
+    {/*"Parceria com Faculdade"*/}
+    <div className="card">
+      
+      <h3>{{
+        pt: "Parceria com Faculdade",
+        fr: "Partenariat avec une université",
+        en: "Partnership with University",
+        ht: "Patnè ak Inivèsite",
+        es: "Asociación con Universidad"
+      }[lang]}</h3>
+      <div className= "icone serviço">
+        <img src={icons} alt="Icons" />
+      </div>
+      <p>{{
+        pt: "Parceria com faculdade para curso de proficiencia na lingua portuguesa para natuiralização.",
+        fr: "Partenariat avec une université pour un cours de langue portugaise pour la naturalisation.",
+        en: "Partnership with university for Portuguese proficiency course for naturalization.",
+        ht: "Patenarya ak inivèsite pou kou konpetans nan lang Pòtigè pou natiralizasyon.",
+        es: "Asociación con universidad para curso de competencia en lengua portuguesa para naturalización."
+      }[lang]}</p>
+    </div>
+
    
     {/* Agência e Segurança de Viagens */}
     <div className="card">
@@ -647,16 +732,13 @@ return (
   </div>
 
   <p>{{
-    pt: "Orientação especializada para obtenção e documentos.",
+    pt: "Orientação especializada para obtenção de documentos.",
     fr: "Conseils spécialisés pour l’obtention du visa et les documents.",
     en: "Specialized guidance for obtaining visa and documents.",
     ht: "Gid espesyalize pou jwenn viza ak dokiman.",
     es: "Orientación especializada para la obtención de visto y documentos."
   }[lang]}</p>
-</div>
-
-
-
+  </div>
   </div>
 </section>
 
@@ -850,7 +932,7 @@ return (
     }[lang]}
   </p>
   <a
-    href="https://forms.gle/formulario-exemplo"
+    href="https://forms.gle/2zf1nwwaGjuMbYJb7"
     className="btn-contato"
     target="_blank"
     rel="noopener noreferrer"

@@ -38,13 +38,13 @@ const Contato: React.FC<ContatoProps> = ({ lang }) => {
       <h2>{texts[lang].title}</h2>
       <p>{texts[lang].desc}</p>
       <a
-        href="https://forms.gle/formulario-exemplo"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-contato"
-      >
-        {texts[lang].btn}
-      </a>
+       href="https://docs.google.com/forms/d/e/1FAIpQLSdz_SzRKWEb3mPO2Y0ddmQKQ0tsyctI2JI03h7w8esXDkdsvA/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-contato"
+>
+  {texts[lang].btn}
+</a>
     </section>
   );
 }
